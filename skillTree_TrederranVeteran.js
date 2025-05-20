@@ -1,67 +1,28 @@
-const skillTree_TrederranVeteran = [
+const trederranVeteranUpgradeChart = [
   [
-    {
-      id: 'spiritualWarrior',
-      name: 'Spiritual Warrior',
-      description: 'Tribal Resilience',
-      effects: { health: 1 }
-    },
-    {
-      id: 'savageGrit',
-      name: 'Savage Grit',
-      description: '+1 Max Grit',
-      effects: { maxGrit: 1 }
-    },
-    {
-      id: 'jungleInstincts',
-      name: 'Jungle Instincts',
-      description: '+1 Spirit',
-      effects: { Spirit: 1 }
-    },
-    {
-      id: 'stalkingHunter',
-      name: 'Stalking Hunter',
-      description: '+1 Initiative',
-      effects: { Initiative: 1 }
-    }
+    { name: "Trench Scout", description: "You may now roll 2 dice for Escape tests, and choose which to use.", bonus: "+2 Move" },
+    { name: "Soldier's Satchel", description: "At the start of every Adventure, gain 1 of the following Side Bag Tokens for free: Bandages, Whiskey (Snake), Shatter Grenade", bonus: "+2 Side Bag Capacity" },
+    { name: "Dark Stone Shots", description: "Once per turn, discard a Dark Stone to add extra Damage to one of your Gun Hits, equal to the number of Upgrade Slots the Gun has." },
+    { name: "Ruthless", description: "Once per Fight, you may take 1 Corruption Hit to add +D3 Damage to one of your Hits." }
   ],
   [
-    {
-      id: 'transformation',
-      name: 'Transformation',
-      description: 'Thick Hide\n+1 Defense',
-      effects: { defense: 1 }
-    },
-    {
-      id: 'battleHardened',
-      name: 'Battle Hardened',
-      description: '+1 Grit recovery per turn',
-      effects: { gritRegen: 1 }
-    },
-    {
-      id: 'ancestralGuidance',
-      name: 'Ancestral Guidance',
-      description: '+1 Lore',
-      effects: { Lore: 1 }
-    },
-    {
-      id: 'skirmisher',
-      name: 'Skirmisher',
-      description: '+1 Agility',
-      effects: { Agility: 1 }
-    }
+    { name: "Adrenaline Rush", description: "At the start of any Fight, you may Heal D6 Wounds/Sanity (any mix)." },
+    { name: "Battle Gear", description: "You are +1 Health for each Clothing Item you have equipped.", bonus: "+1 Strength" },
+    { name: "Weapons Training", description: "When using any Gun, add +2 Range. When using any Gun, add +1 Shot." },
+    { name: "Dark Stone Greed", description: "You are +1 Sanity for each Dark Stone and Dark Stone icon on Items that you are carrying. This includes Dark Stone that is ‘Hidden’ (max +10)." }
   ],
   [
-    {
-      id: 'darkStoneMastery',
-      name: 'Dark Stone Mastery',
-      description: 'Tough as Nails\n+2 Max Health',
-      effects: { health: 2 }
-    },
-    null,
-    null,
-    null
+    { name: "Keen Eyes", description: "Whenever you draw one or more Loot or Scavenge cards, you may draw one extra (this may increase beyond the normal limit of 3 Loot per Fight)." },
+    { name: "Unflinching", description: "Willpower 3+" },
+    { name: "Firefight", description: "Once per turn, when you kill an Enemy with a Ranged Attack, make a Cunning 6+ test to Recover 1 Grit for each 6+ rolled." },
+    { name: "Watch the World Burn", description: "Any time the Darkness moves 1 or more spaces forward on the Depth Track, you may Recover a Grit.", bonus: "+1 Lore" }
   ],
-  [null, null, null, null]
+  [
+    { name: "Winds of Change", description: "Once per turn, you may make a Luck 6+ test to cancel and re-draw a Darkness, Growing Dread, Encounter, or Threat card just drawn. Gain 20 XP.", bonus: "+2 Corruption Resistance" },
+    { name: "Trederran Sunset", description: "Any time you are KO’d, you may do 2D6 Wounds to every adjacent model, ignoring Defense. You now have unlimited Max Grit." },
+    { name: "Death Machine", description: "Once per turn, use 2 Grit to make an extra Ranged Attack.", bonus: "+1 Max Grit" },
+    { name: "Frenzy", description: "You are +1 Combat for each Mutation you have (Limit +3). Free Attack (Once per Fight): Use 1 Grit to make an extra Melee Attack." }
+  ]
 ];
-export default skillTree_TrederranVeteran;
+
+export default trederranVeteranUpgradeChart;
